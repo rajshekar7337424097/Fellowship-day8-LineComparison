@@ -14,7 +14,7 @@ public class LineComparisonUC2 {
 		System.err.println("Length of 1st line :"+length1);
 	}
 	 
-		int X1 = 20; int Y1 = 10; int X2 = 32; int Y2 = 30;
+		int X1 = 20; int Y1 = 10; int X2 = 32; int Y2 = 45;
 		public void line2() {
 			double m = ((X2 - Y2));
 			double n = ((X1 - Y1));
@@ -25,12 +25,14 @@ public class LineComparisonUC2 {
 			System.err.println("Length of 1st line :"+length2);
 		}
 		public static void checkEqualsLine(double length1, double length2) {
-			if(length1 == length2) {
-				System.out.println("equal");
+			if(length1 <= length2) {
+				System.out.println("line 2 is greater then line1");
+			}else if (length1 >= length2){
+				System.out.println("Line1 is greater then line2");
 			}else {
-				System.out.println("not equal");
+				System.out.println("lines are equal");
 			}
-			
+
 		}
 	
 	public static void main(String[] args) {
