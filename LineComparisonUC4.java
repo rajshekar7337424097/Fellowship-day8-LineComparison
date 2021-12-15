@@ -1,9 +1,7 @@
 package com.bl.Linecomparison;
 
-
-
-public class LineComparisonUC2 {
-	int x1 = 20; int y1 = 10; int x2 = 32; int y2 = 30;
+public class LineComparisonUC4 {
+	static int x1 = 20; static int y1 = 10; static int x2 = 30; static int y2 = 40;
 	public void line1() {
 		double A = ((x2 - y2));
 		double B = ((x1 - y1));
@@ -13,7 +11,6 @@ public class LineComparisonUC2 {
 		double length1 = Math.sqrt(c);
 		System.err.println("Length of 1st line :"+length1);
 	}
-
 	int X1 = 20; int Y1 = 10; int X2 = 32; int Y2 = 45;
 	public void line2() {
 		double m = ((X2 - Y2));
@@ -42,6 +39,3 @@ public class LineComparisonUC2 {
 		checkEqualsLine(0, 0);
 	}
 }
-
-
-
